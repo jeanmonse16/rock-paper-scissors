@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <header class="header">
+            <h1>
+                Welcome to Rock, Paper & Scissors
+            </h1>
+        </header>
+    </section>
+
+    <section>
+        <div class="grid grid-columns-2 justify-center p-40 gap-20">
+            <div class="space-y-4">
+                <p>
+                    This is an intransitive hand game, usually played between two people, 
+                    in which each player simultaneously forms one of three shapes with an outstretched
+                     hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" 
+                     (a fist with the index finger and middle finger extended, forming a V).
+                </p>
+                <div>
+                    <label for="rounds">How many rounds do you want to play?</label>
+                    <div class="mt-10"><input class="rounds-input" min="1" max="100" type="number" id="rounds-quantity"></div>
+                    
+                </div>
+                <button class="play-button" id="play-button">Play!</button>
+              
+            </div>
+            
+            <div class="flex justify-center"> <img width="250" src="./images/Rock-paper-scissors.png" alt="Rock-paper-scissors"></div>
+           
+        </div>
+    </section>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

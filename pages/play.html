@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's play</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="main" class="">
+        <section>
+            <header class="header">
+                <h1 id="round">
+                </h1>
+            </header>
+        </section>
+    
+        <section class="flex justify-center gap-40 mt-10">
+    
+            <div class="space-y-4">
+                <div class="player-box">
+                    <p>You</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <p class="font-s-2" id="playerScore">0</p>
+                </div>
+                
+            </div>
+            <div class="space-y-4">
+                <div class="player-box">
+                    <p>Computer</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <p class="font-s-2" id="computerScore">0</p>
+                </div>
+                
+            </div>
+            
+        </section>
+    
+        <section class="p-20" id="gameTitle">
+            <h1>Choose an Option! first to reach 5 points wins</h1>
+        </section>
+    
+        </section>
+    
+        <section class="grid grid-columns-3 p-20 mt-20" id="optionsDiv">
+            <div class="flex justify-center items-center">
+                <button class="rock-paper-scissors-button" id="rock" > 
+                    <img src="../images/rock.png" alt="rock">
+                </button>
+               
+            </div>
+            <div class="flex justify-center items-center">
+                <button class="rock-paper-scissors-button" id="paper">
+                    <img src="../images/paper.png" alt="paper">
+                </button>
+            </div>
+            <div class="flex justify-center items-center">
+                <button class="rock-paper-scissors-button" id="scissors">
+                    <img src="../images/scissors.png" alt="scissors">
+                </button>
+            </div>
+        </section>
+
+        <section class="space-y-4 mt-20 hidden" id="resultDiv">
+            <div class="flex justify-center">
+                <h1 id="resultText">You have won!</h1>
+            </div>
+            <div class="flex justify-center">
+                <img id="resultImg" src="">
+            </div>
+            <div class="flex justify-center">
+                <button class="play-button" id="restartButton">Restart game</button>
+            </div>
+
+        </section>
+    </div>
+   
+
+    <div class="modal hidden" id="modal">
+        <div class="modal-bg modal-exit"></div>
+        <div class="modal-container space-y-4">
+            <h1 id="roundResult">DRAW!</h1>
+            <h2 id="playerChoice">Your choice: Rock</h1>
+            <h2 id="computerChoice">Computer`s choice: Paper</h1>
+            <div class="flex justify-center mt-10">
+                <button class="continue-button" id="continueButton">Continue</button>
+            </div>
+          
+        </div>
+      </div>
+
+    <script src="./play.js"></script>
+</body>
+</html>
